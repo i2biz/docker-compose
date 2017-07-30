@@ -1,0 +1,15 @@
+galaxy_info:
+  author: Jacek Bzdak
+  description: Install docker compose to debian system via PIP
+
+  license: MIT
+
+  min_ansible_version: 2.0
+
+   platforms:
+   - name: Debian
+     versions:
+     - 8
+     - 9
+
+  galaxy_tags: ["docker", "dockercompose"]

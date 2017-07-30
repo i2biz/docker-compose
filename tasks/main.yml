@@ -1,0 +1,10 @@
+---
+- name: Install docker-compose prerequisites
+  apt: name={{item}} state=latest
+  with_items: "{{ COMPOSE_DEPENDENCIES }}"
+
+- name: Install docker-compose prerequisites
+  command: easy_install pip
+
+- name: install docker-compose via pip
+  pip: name={{ COMPOSE_VERSION }} state=present

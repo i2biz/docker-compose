@@ -1,0 +1,10 @@
+---
+
+# apt-get dependencies
+COMPOSE_DEPENDENCIES:
+  - python-pip
+  - python-setuptools
+
+# pip version docker-compose
+COMPOSE_VERSION: docker-compose==1.9.0
+
